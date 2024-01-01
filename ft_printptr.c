@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printptr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zalouach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 09:47:49 by zalouach          #+#    #+#             */
-/*   Updated: 2023/12/31 09:48:27 by zalouach         ###   ########.fr       */
+/*   Updated: 2024/01/01 11:47:21 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printptr(unsigned long value, int *count)
+void	ft_printptr(unsigned long int value, int *count)
 {
 	ft_putstr("0x", count);
 	ft_printhex(value, count, 'a');

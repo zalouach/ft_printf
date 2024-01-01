@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zalouach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 09:45:14 by zalouach          #+#    #+#             */
-/*   Updated: 2023/12/31 09:45:43 by zalouach         ###   ########.fr       */
+/*   Updated: 2024/01/01 10:07:31 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putchar(char c, int *count)
 {
 	write (1, &c, 1);
-	count++;
+	*count += 1;
 }

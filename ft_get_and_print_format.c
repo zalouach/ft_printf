@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_get_and_print_format.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zalouach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: zalouach <zalouach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 09:40:14 by zalouach          #+#    #+#             */
-/*   Updated: 2023/12/31 09:42:57 by zalouach         ###   ########.fr       */
+/*   Updated: 2024/01/01 11:21:10 by zalouach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ void	ft_get_and_print_format(char Spesefaire, va_list argp, int *count)
 	else if (Spesefaire == 's')
 		ft_putstr(va_arg(argp, char *), count);
 	else if (Spesefaire == 'x')
-		ft_printhex(va_arg(argp, int), count, Spesefaire - 23);
+		ft_printhex(va_arg(argp, unsigned int), count, Spesefaire - 23);
 	else if (Spesefaire == 'X')
-		ft_printhex(va_arg(argp, int), count, Spesefaire - 23);
+		ft_printhex(va_arg(argp, unsigned int ), count, Spesefaire - 23);
 	else if (Spesefaire == 'p')
-		ft_printptr(va_arg(argp, unsigned long), count);
+		ft_printptr(va_arg(argp, unsigned long ), count);
 	else if (Spesefaire == 'u')
 		ft_printunsigned(va_arg(argp, unsigned int), count);
 	else
